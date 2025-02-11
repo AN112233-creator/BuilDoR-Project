@@ -45,6 +45,16 @@ function Home (){
             };
           }, []);
 
+         
+          const [isHover, setIsHover] = useState(false)
+
+          const handleMouseEnter = () => {
+            setIsHover(true);  
+          };
+          const handleMouseLeave = () => {
+            setIsHover(false);  
+          };
+
 
 
 
@@ -63,7 +73,10 @@ function Home (){
         </a>
         <ul className={isOpen ? "open" : ""}>
           <li><Link to = "/" className='active'> Home</Link></li>
-         <li> <Link to = "/about"> About Us</Link></li>
+          <li> <Link to = "/about"  className= {`${isHover ? "" : ""}`} 
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}>About Us</Link></li>
+              <div  className= {`team ${isHover ? "OurTeam" : ""}`} onMouseEnter={handleMouseEnter}  onMouseLeave={handleMouseLeave}>Our Team</div>
           <li><Link to = "/projects">Projects</Link></li>
           <li><a href="#">Services</a></li>
           <li><a href="#">Clients</a></li>

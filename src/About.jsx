@@ -24,6 +24,16 @@ function  About () {
 
   }
 
+  const [isHover, setIsHover] = useState(false)
+
+  const handleMouseEnter = () => {
+    setIsHover(true);  
+  };
+  const handleMouseLeave = () => {
+    setIsHover(false);  
+  };
+
+
   useEffect(() => {
     const handleScroll = () => {
       const navbar = document.getElementById('navbar');
@@ -61,7 +71,10 @@ function  About () {
            </a>
            <ul className={isOpen ? "open" : ""}>
              <li><Link to = "/">Home</Link></li>
-             <li> <Link to = "/about"  className='active'>About Us</Link></li>
+             <li> <Link to = "/about"  className= {`active ${isHover ? "" : ""}`} 
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}>About Us</Link></li>
+              <div  className= {`team ${isHover ? "OurTeam" : ""}`} onMouseEnter={handleMouseEnter}  onMouseLeave={handleMouseLeave}>Our Team</div>
              <li> <Link to = "/projects">Projects</Link></li>
              <li><a href="#">Services</a></li>
              <li><a href="#">Clients</a></li>
