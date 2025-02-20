@@ -17,10 +17,10 @@ import TestimonialSlider from './Slider/Slider.jsx'
 function Home (){
 
 
-  const year = new Date().getFullYear()
+  const year = new Date().getFullYear();
  
 
-          const [isOpen, setIsOpen] = useState(false)
+          const [isOpen, setIsOpen] = useState(false);
 
           const toggleMenu = () => {
             setIsOpen(!isOpen)
@@ -142,7 +142,7 @@ function Home (){
           </div>
          
          <div className="image-one">
-          <img   src={firstImage} alt="our projects" width= "600" height= "400"/>
+          <img  className='img'  src={firstImage} alt="our projects" width= "600" height= "400"/>
           </div>
         </div>
       </section>

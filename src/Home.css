@@ -66,14 +66,19 @@ nav{
 }
 
 .nav-active{
-  background-color: var(--Nav-active);
-  transition: 3s ease-in-out;
+   background-color: var(--Nav-active);
+  transition: 0.3s ease-in-out; 
+  position: fixed;
+  top: 0;
  
  
 }
 
 .black-nav{
   background-color: var(--Nav-active);
+  transition: 1s ease-in-out;
+ /*  position: fixed;
+  top: 0; */
  /*  transition: 3s ease-in-out;
   position: fixed;
   top: 0; */
@@ -430,7 +435,6 @@ right:140px;
 
 
 .arrow, .read-word{
-  /* font-size: 1.4rem; */
   font-weight: lighter;
 }
 .arrow{
@@ -623,7 +627,9 @@ line-height: 20px;
     justify-content: space-between;
     width: 100%;
     margin-left: 0px;
-     padding: 10px 10px; 
+     padding: 10px 10px;
+     position: fixed;
+     top: 0px; 
        
   }
 
@@ -650,7 +656,9 @@ line-height: 20px;
   }
 
   .active {
-    color: var(--Nav-active)
+    color: var(--Nav-active);
+    
+    
   }
 
 
@@ -672,7 +680,6 @@ line-height: 20px;
     text-align: center;
     gap: 70px;
     margin-left: 0px;
-   
     z-index: 10000000;
   } 
 
@@ -682,6 +689,7 @@ line-height: 20px;
     transform: translateY(0); 
     opacity: 1;
     pointer-events: auto;
+   
   }
 
   

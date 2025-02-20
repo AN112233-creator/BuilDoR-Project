@@ -94,12 +94,16 @@
   .nav-active{
     background-color: var(--Nav-active);
     transition: 0.3s ease-in-out;
+    position: fixed;
+    top: 0;
    
   }
   
   .black-nav{
     background-color: var(--Nav-active);
-     transition: 0.3s ease-in-out;  
+     transition: 1s ease-in-out;  
+    /*  position: fixed;
+     top: 0; */
   }
   
    nav ul {
