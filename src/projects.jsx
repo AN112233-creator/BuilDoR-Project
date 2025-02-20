@@ -87,10 +87,11 @@ function Projects (){
               onMouseLeave={handleMouseLeave}>About Us</Link></li>
               <div  className= {`team ${isHover ? "OurTeam" : ""}`} onMouseEnter={handleMouseEnter}  onMouseLeave={handleMouseLeave}>Our Team</div>
              <li><Link to = "/projects" className='active'>Projects</Link></li>
-             <li><a href="#">Services</a></li>
-             <li><a href="#">Clients</a></li>
-             <li><a href="#">Contact us</a></li>
-             <li><a href="#">Blog</a></li>
+             <li><Link to = "/services">Services</Link></li>
+             <li><Link to = "/clients">Clients</Link></li>
+             <li><Link to = "/contacts">Contact us</Link></li>
+             <li><Link to = "/blogs">Blog</Link></li>
+        
            </ul>
    
            <div className="icons">
