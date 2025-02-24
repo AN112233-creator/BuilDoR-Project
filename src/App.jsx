@@ -2,9 +2,9 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css' */
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom"; 
 import Home from "./Home"
-//import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+/* import { BrowserRouter as Router, Routes, Route } from "react-router-dom"; */
 
 import About from "./About";
 import Projects from "./projects";
